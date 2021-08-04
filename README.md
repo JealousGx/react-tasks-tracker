@@ -3,7 +3,6 @@
 Man is ever busy and will most likely forget his tasks, thus, to keep a list of all the tasks to be done has become necessary for most of the people. This simple tasks tracker not only saves the them but also sets reminder for each task. Once the task is completed, it can be deleted by just double clicking the task.
 
 ---
----
 
 A simple and medium level tasks tracker with the data being saving in JSON server in the backend. A beginner friendly project to get introduction of how backend works (Getting started with MERN).
 
@@ -12,6 +11,9 @@ To run this code on your machine, you need to have:
 
 - NodeJS or yarn
 - Basic knowledge of NPM and React Then simply do npm i && npm start and in case you have yarn, you have to type yarn and then yarn start.
+
+Simple live demo has been arranged for your convenience 
+[Live site](jealousgx.github.io/react-tasks-tracker/)
 
 
 ###### Tutorial by Traversy Media
