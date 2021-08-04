@@ -13,7 +13,7 @@ To run this code on your machine, you need to have:
 - Basic knowledge of NPM and React Then simply do npm i && npm start and in case you have yarn, you have to type yarn and then yarn start.
 
 Simple live demo has been arranged for your convenience 
-[Live site](jealousgx.github.io/react-tasks-tracker/)
+[Live site](https://jealousgx.github.io/react-tasks-tracker/)
 
 
 ###### Tutorial by Traversy Media
