@@ -19,7 +19,7 @@ function App() {
     getTasks();
   }, []);
 
-  //fetch tasks
+  // fetch tasks
   const fetchTasks = async () => {
     const res = await fetch(
       "https://my-json-server.typicode.com/jealousgx/tasks-tracker-dbjson/tasks"
@@ -28,7 +28,7 @@ function App() {
     return data;
   };
 
-  //fetch task
+  // fetch task
   const fetchTask = async (id) => {
     const res = await fetch(
       `https://my-json-server.typicode.com/jealousgx/tasks-tracker-dbjson/tasks/${id}`
@@ -37,10 +37,10 @@ function App() {
     return data;
   };
 
-  //Add task
+  // Add task
   const addTask = async (task) => {
     const res = await fetch(
-      `https://my-json-server.typicode.com/jealousgx/tasks-tracker-dbjson/tasks`,
+      "https://my-json-server.typicode.com/jealousgx/tasks-tracker-dbjson/tasks",
       {
         method: "POST",
         headers: {
@@ -58,7 +58,7 @@ function App() {
     // setTasks([...tasks, newTask]);
   };
 
-  //Delete task
+  // Delete task
   const deleteTask = async (id) => {
     await fetch(
       `https://my-json-server.typicode.com/jealousgx/tasks-tracker-dbjson/tasks/${id}`,
@@ -69,7 +69,7 @@ function App() {
     setTasks(tasks.filter((task) => task.id !== id));
   };
 
-  //Toggle reminder
+  // Toggle reminder
   const toggleReminder = async (id) => {
     const taskToToggle = await fetchTask(id);
     const updtTask = { ...taskToToggle, reminder: !taskToToggle.reminder };
@@ -96,7 +96,7 @@ function App() {
     <div className="container">
       <Header
         onAdd={() => setShowAddTask(!showAddTask)}
-        title={"Tasks Tracker"}
+        title="Tasks Tracker"
         showAdd={showAddTask}
       />
 

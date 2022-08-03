@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState } from "react";
 
 const AddTask = ({ onAdd }) => {
   const [text, setText] = useState("");
@@ -9,52 +9,48 @@ const AddTask = ({ onAdd }) => {
     e.preventDefault();
 
     if (!text) {
-      alert('Type something to add to task!');
-      return
+      alert("Type something to add to task!");
+      return;
     }
 
     onAdd({ text, day, reminder });
-    setText('');
-    setDay('');
+    setText("");
+    setDay("");
     setReminder(false);
-  }
+  };
   return (
-    <form className='add-form' onSubmit={onSubmit} >
-      <div className='form-control'>
+    <form className="add-form" onSubmit={onSubmit}>
+      <div className="form-control">
         <label>Task</label>
-        <input 
-          type='text' 
-          value={text} 
-          onChange={(e) => setText(e.target.value)} 
-          placeholder='Add Task' 
+        <input
+          type="text"
+          value={text}
+          onChange={(e) => setText(e.target.value)}
+          placeholder="Add Task"
         />
       </div>
-      <div className='form-control'>
+      <div className="form-control">
         <label>Day and Time</label>
-        <input 
-          type='text' 
-          placeholder='Add day and time' 
-          value={day} 
-          onChange={(e) => setDay(e.target.value)} 
+        <input
+          type="text"
+          placeholder="Add day and time"
+          value={day}
+          onChange={(e) => setDay(e.target.value)}
         />
       </div>
-      <div className='form-control form-control-check'>
+      <div className="form-control form-control-check">
         <label>Set Reminder</label>
-        <input 
-          type='checkbox' 
+        <input
+          type="checkbox"
           checked={reminder}
-          value={reminder} 
-          onChange={(e) => setReminder(e.currentTarget.checked)} 
+          value={reminder}
+          onChange={(e) => setReminder(e.currentTarget.checked)}
         />
       </div>
 
-      <input 
-      type='submit' 
-      value='Save Task' 
-      className='btn btn-block' 
-    />
+      <input type="submit" value="Save Task" className="btn btn-block" />
     </form>
-  )
-}
+  );
+};
 
-export default AddTask
+export default AddTask;

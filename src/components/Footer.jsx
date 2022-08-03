@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 
 const Footer = () => {
-  let year = new Date().getFullYear();
+  const year = new Date().getFullYear();
   return (
     <footer>
       <p>Copyright &copy; {year}</p>
-      <Link to='/about'>About</Link>
+      <Link to="/about">About</Link>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
